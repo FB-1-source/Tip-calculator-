@@ -14,10 +14,6 @@ split = int (input())
 
 tip1 = tip / 100 + 1
 
-bill = total * tip1 / split
+bill = round(total * tip1 / split,2)
 
-finalbill = round(bill,2)
-
-finalbill = str(finalbill)
-
-print("Each person should pay: $" + finalbill)
+print("Each person should pay: $" + str(bill))
