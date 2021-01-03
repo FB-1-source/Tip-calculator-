@@ -12,8 +12,8 @@ print("How many people to split the bill?")
 
 split = int (input())
 
-tip1 = tip / 100 + 1
+tip = tip / 100 + 1
 
-bill = round(total * tip1 / split,2)
+bill = round(total * tip / split,2)
 
 print("Each person should pay: $" + str(bill))
